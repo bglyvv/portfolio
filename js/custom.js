@@ -312,7 +312,7 @@
 			Password : "kb6853917",
 			To : 'kananbagaliyev@gmail.com',
 			From : email,
-			Subject : "Message from"+name,
+			Subject : "Message from"+". "+name,
 			Body : message
 		}).then(
 		  message => document.querySelector(".output_message").innerHTML = "Message has been sent succesfully"
