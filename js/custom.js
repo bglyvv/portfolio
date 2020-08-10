@@ -237,6 +237,9 @@
         /*  BACK TO MAIN SECTION IN MOBILE
         /* ----------------------------------------------------------- */
 
+        $('#back-mobile').on('click', function(e) {
+            $('#main').removeClass('open');
+        });	
 		
 		
 		/* ----------------------------------------------------------- */
@@ -300,7 +303,7 @@
 		});
 		
 	});
-
+	
 	document.querySelector("#send_message").onclick = function(){
 		let name = document.querySelector("#name").value
 		let email = document.querySelector("#email").value
