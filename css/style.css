@@ -59,6 +59,11 @@ html {
   box-sizing: border-box;
 }
 
+/* .container{
+  width: 1140px!important;
+} */
+
+
 body {
   font-family: 'Poppins', sans-serif;
   color: #555;
@@ -193,31 +198,28 @@ h1,h2,h3,h4,h5,h6 {
   display: none;
 }
 
-.container {
+/* .container {
   margin: 0 auto;
   max-width: initial;
-  max-width: 1170px;
-}
+} */
 
-@media only screen and (min-width: 601px) {
+/* @media only screen and (min-width: 601px) {
   .container {
     width: 100%;
   }
-}
+} */
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 992px) {
   .container {
-    width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
+    width: 720px;
+  }
+}
+@media only screen and (min-width: 1329px) {
+  .container {
+    width: 980px;
   }
 }
 
-@media only screen and (min-width: 1199px) {
-  .container {
-    width: 100%;
-  }
-}
 
 /* BODY DARK
 ================================================== */
@@ -2880,12 +2882,18 @@ ul.social-intro li a:hover i {
     font-size: 28px;
   }
 
-  .container {
-    width: 100%;
-  }
-
   .main-text h1 {
     font-size: 22px;
+  }
+
+
+  .list-2{
+    margin-top: 15px!important;
+    text-align: center;
+  }
+
+  .list-1{
+    text-align: center;
   }
 
   section#blog .container.page-title h2 {
