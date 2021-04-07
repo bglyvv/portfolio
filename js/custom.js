@@ -310,13 +310,11 @@
 		let message = document.querySelector("#comment").value
 
 		Email.send({
-			Host : "smtp.gmail.com",
-			Username : "noreply.codetutorial@gmail.com",
-			Password : "kb6853917",
+			SecureToken : "143487a6-4252-4d78-aea5-cac57b09e515",
 			To : 'kananbagaliyev@gmail.com',
-			From : email,
-			Subject : "Message from"+". "+name,
-			Body : message
+			From : 'noreply.codetutorial@gmail.com',
+			Subject : "New message from website by: "+name,
+			Body : message+'<br/>'+'My Email: '+email
 		}).then(
 		  message => document.querySelector(".output_message").innerHTML = "Message has been sent succesfully"
 		);
